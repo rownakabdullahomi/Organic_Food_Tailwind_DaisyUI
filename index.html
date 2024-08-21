@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organic Food</title>
+    <!-- Font Awesome CDN -->
+    <script src="https://kit.fontawesome.com/b5aa530026.js" crossorigin="anonymous"></script>
+
+    <!-- Poppins Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- Tailwind and DaisyUI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Tailwind CSS Configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        primary: 'rgb(139, 195, 74)',
+                        secondary: 'rgb(17, 17, 17)',
+                        body: 'rgb(248, 246, 243)',
+                        accent: 'rgb(106, 151, 57)',
+                        body_neutral: 'rgb(51, 51, 51)',
+                    },
+                    fontFamily: {
+                        Poppins: "Poppins",
+                    },
+                    backgroundImage: {
+                        leaf1: "url('./images/leaf01.png')",
+                        call_to_action: "url('./images/call.jpg')",
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="font-Poppins">
+    <!-- Header Section Starts -->
+    <header>
+        <!-- Navbar Starts -->
+        <nav class="w-11/12 mx-auto">
+            <div class="navbar p-0 py-2">
+                <div class="navbar-start">
+                    
+                    <a class="" href="#">
+                        <img class="w-36" src="images/logo.svg" alt="">
+                    </a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1 text-lg font-medium">
+                        <li class="hover:text-primary transition-colors duration-300 ease-in-out"><a>Home</a></li>
+                        <li class="hover:text-primary transition-colors duration-300 ease-in-out"><a>Everything</a></li>
+                        <li class="hover:text-primary transition-colors duration-300 ease-in-out"><a>Groceries</a></li>
+                        <li class="hover:text-primary transition-colors duration-300 ease-in-out"><a>About</a></li>
+                        <li class="hover:text-primary transition-colors duration-300 ease-in-out"><a>Contact</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end flex items-center gap-5">
+                    <div class="flex items-center gap-5 text-lg">
+                        <button class="flex items-center gap-2 font-semibold text-accent">
+                            <span>$10.00</span>
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </button>
+                        <button>
+                            <i class="fa-solid fa-user"></i>
+                        </button>
+                    </div>
+
+
+
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn text-black bg-primary lg:hidden">
+                            <i class="fa-solid fa-bars"></i>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow text-lg font-medium right-0">
+
+                            <li class="hover:text-primary transition-colors duration-300 ease-in-out"><a>Home</a></li>
+                            <li class="hover:text-primary transition-colors duration-300 ease-in-out"><a>Everything</a>
+                            </li>
+                            <li class="hover:text-primary transition-colors duration-300 ease-in-out"><a>Groceries</a>
+                            </li>
+                            <li class="hover:text-primary transition-colors duration-300 ease-in-out"><a>About</a></li>
+                            <li class="hover:text-primary transition-colors duration-300 ease-in-out"><a>Contact</a>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </nav>
+
+        <!-- Banner Section Starts -->
+         <section class="h-[85vh] bg-leaf1 bg-no-repeat bg-right-bottom">
+            <div class="h-full w-full bg-body bg-opacity-90">
+                <div class="lg:w-9/12 mx-auto py-20 flex">
+                    <div class="flex-1">
+                        <img src="images/bannerbg.png" alt="">
+                    </div>
+                    <div class="flex-1">
+                        <h4>Best Quality Product</h4>
+                        <h1>Join The Organic Movement</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi cumque doloremque ad, nemo ullam sint ea eveniet pariatur? Tempore, ex?</p>
+                        <div>
+                            <button>
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                <span>Shop Now</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+         </section>
+    </header>
+
+</body>
+
+</html>
